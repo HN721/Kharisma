@@ -22,7 +22,6 @@ const InformationForm = () => {
   };
 
   return (
-    
     <div className="bg-white p-6 rounded-lg shadow-md">
       <h2 className="text-xl font-semibold text-gray-800 mb-4">Informasi Form</h2>
       <form onSubmit={handleSubmit}>
@@ -34,7 +33,8 @@ const InformationForm = () => {
           <input
             type="text"
             id="judul"
-            className="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-500 focus:ring-opacity-50"
+            placeholder="Masukkan judul informasi"
+            className="mt-1 block w-full px-4 py-3 text-lg border-gray-300 rounded-md shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-500 focus:ring-opacity-50"
             value={judul}
             onChange={(e) => setJudul(e.target.value)}
             required
@@ -49,7 +49,8 @@ const InformationForm = () => {
           <input
             type="date"
             id="tanggal"
-            className="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-500 focus:ring-opacity-50"
+            placeholder="Pilih tanggal"
+            className="mt-1 block w-full px-4 py-3 text-lg border-gray-300 rounded-md shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-500 focus:ring-opacity-50"
             value={tanggal}
             onChange={(e) => setTanggal(e.target.value)}
             required
@@ -63,12 +64,12 @@ const InformationForm = () => {
           </label>
           <select
             id="status"
-            className="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-500 focus:ring-opacity-50"
+            className="mt-1 block w-full px-4 py-3 text-lg border-gray-300 rounded-md shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-500 focus:ring-opacity-50"
             value={status}
             onChange={(e) => setStatus(e.target.value)}
             required
           >
-            <option value="">Pilih Status</option>
+            <option value="" disabled>Pilih Status</option>
             <option value="aktif">Aktif</option>
             <option value="tidak aktif">Tidak Aktif</option>
           </select>
@@ -81,8 +82,9 @@ const InformationForm = () => {
           </label>
           <textarea
             id="isi"
+            placeholder="Masukkan isi informasi"
             rows="4"
-            className="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-500 focus:ring-opacity-50"
+            className="mt-1 block w-full px-4 py-3 text-lg border-gray-300 rounded-md shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-500 focus:ring-opacity-50"
             value={isi}
             onChange={(e) => setIsi(e.target.value)}
             required

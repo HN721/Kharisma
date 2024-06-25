@@ -38,7 +38,7 @@ const Sidebar = () => {
         { title: 'Kharisma Kidz', path: '/wadah-anak', src: <FaPeopleRoof /> },
       ]
     },
-    { title: 'Jadwal', path: '/jadwal', src: <AiOutlineSchedule /> },
+    { title: 'Absensi', path: '/Absensi', src: <AiOutlineSchedule /> },
     { title: 'Signin', path: '/login', src: <SiOpenaccess />, gap: 'true' },
   ];
 

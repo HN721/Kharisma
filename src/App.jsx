@@ -9,6 +9,8 @@ import Informasi from './pages/Informasi'
 import Login from './pages/Login'
 import Tambah from './pages/Tambah'
 import Info from './component/Info'
+import AbsensiTable from "./pages/AbsensiTable"
+import Absensi from './component/Absensi/Absensi'
 export default function App() {
   return (
     <ThemeProvider>
@@ -20,6 +22,8 @@ export default function App() {
           <Route path='/course' element={<Course />} />
           <Route path='/informasi' element={<Informasi/>} />
           <Route path='/informasi/info-jemaat' element={<Info/>} />
+          <Route path='/absensi' element={<AbsensiTable/>} />
+          <Route path='/absensi/tambah' element={<Absensi/>} />
 
           <Route path='/login' element={<Login />} />
           <Route path='/add-jemaat' element={<Tambah/>}/>
