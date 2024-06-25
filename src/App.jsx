@@ -2,7 +2,6 @@ import React from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Layout from './component/Layout'
 import { ThemeProvider } from '../src/component/ThemeContext'
-import Home from './pages/Home'
 import Dashboard from './pages/Dashboard'
 import Course from './pages/Course'
 import Informasi from './pages/Informasi'
@@ -17,7 +16,7 @@ export default function App() {
     <BrowserRouter>
       <Layout>
         <Routes>
-          <Route path='/' element={<Dashboard />} />
+          <Route path='/' element={<Login />} />
           <Route path='/dashboard' element={<Dashboard />} />
           <Route path='/course' element={<Course />} />
           <Route path='/informasi' element={<Informasi/>} />
@@ -25,7 +24,6 @@ export default function App() {
           <Route path='/absensi' element={<AbsensiTable/>} />
           <Route path='/absensi/tambah' element={<Absensi/>} />
 
-          <Route path='/login' element={<Login />} />
           <Route path='/add-jemaat' element={<Tambah/>}/>
 
          
